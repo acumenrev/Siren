@@ -39,35 +39,31 @@ public protocol SirenDelegate: class {
 public extension SirenDelegate {
 
     func sirenDidShowUpdateDialog(alertType: Siren.AlertType) {
-        printMessage()
+        assertionFailure("An attempt to reach \(#function) failed as it was called without being implemented.")
     }
 
     func sirenUserDidLaunchAppStore() {
-        printMessage()
+        assertionFailure("An attempt to reach \(#function) failed as it was called without being implemented.")
     }
 
     func sirenUserDidSkipVersion() {
-        printMessage()
+        assertionFailure("An attempt to reach \(#function) failed as it was called without being implemented.")
     }
 
     func sirenUserDidCancel() {
-        printMessage()
+        assertionFailure("An attempt to reach \(#function) failed as it was called without being implemented.")
     }
 
     func sirenDidFailVersionCheck(error: NSError) {
-        printMessage()
+        assertionFailure("An attempt to reach \(#function) failed as it was called without being implemented.")
     }
 
     func sirenDidDetectNewVersionWithoutAlert(message: String) {
-        printMessage()
+        assertionFailure("An attempt to reach \(#function) failed as it was called without being implemented.")
     }
 
     func sirenLatestVersionInstalled() {
-        printMessage()
-    }
-
-    private func printMessage(_ function: String = #function) {
-        SirenLog("The default implementation of \(function) is being called. You can ignore this message if you do not care to implement this method in your `SirenDelegate` conforming structure.")
+        assertionFailure("An attempt to reach \(#function) failed as it was called without being implemented.")
     }
 
 }

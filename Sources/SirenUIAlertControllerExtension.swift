@@ -7,11 +7,12 @@
 //
 
 import Foundation
+import UIKit
 
 // MARK: - UIAlertController Extension for Siren
 
 internal extension UIAlertController {
-    @objc func show() {
+    func show() {
         let window = UIWindow(frame: UIScreen.main.bounds)
         window.rootViewController = SirenViewController()
         window.windowLevel = UIWindowLevelAlert + 1

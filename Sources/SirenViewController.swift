@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import UIKit
 // MARK: - UIViewController Extension for Siren
 
 internal class SirenViewController: UIViewController {
